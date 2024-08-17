@@ -17,7 +17,7 @@ html, body {
 }
 
 .container {
-    max-width: 114rem;
+    max-width: 117rem;
     margin: 0 auto;
 }
 
@@ -321,5 +321,6 @@ html, body {
     font-style: normal;
 }
 
+@import url(../blocks/header/header.css);
 
 
