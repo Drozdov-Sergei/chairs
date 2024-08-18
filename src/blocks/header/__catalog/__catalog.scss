@@ -1,10 +1,16 @@
 .header__catalog {
-    display: flex;
-    align-items: center;
-    background: #2b3350;
+    @include flex_center;
+    background: $first_color;
     border-radius: 0 1.2rem 1.2rem 1.2rem;
     width: 15.8rem;
     height: 4.7rem;
     cursor: pointer;
     margin-right: 4.25rem;
+}
+
+
+@media (max-width: 48em) {
+    .header__catalog {
+      display: none;
+    }
 }

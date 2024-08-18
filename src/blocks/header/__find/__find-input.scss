@@ -1,12 +1,12 @@
 .header__find-input {
-    border: none;
-    outline: none;
     padding-left: 5rem;
     font-weight: 400;
     font-size: 1.7rem;
     color: #101426;
     border-radius: 0.8rem;
-    background: url(../../../original-img/header/search.svg) #f7f7f8;;
+    background: url(../../../original-img/header/search.svg) #f7f7f8;
     background-repeat: no-repeat;
-    background-position: 2.5rem;
+    background-position-x: 2rem;
+    background-position-y: 50%;
+    background-size: 2rem;
 }

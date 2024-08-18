@@ -1,5 +1,4 @@
 .header__menu {
-    display: flex;
-    align-items: center;
+    @include flex_center;
     justify-content: space-between;
 }

@@ -3,3 +3,9 @@
     height: 5.1rem;
     margin-right: 2rem;
 }
+
+@media (max-width: 48em) {
+    .header__find {
+      display: none;
+    }
+}

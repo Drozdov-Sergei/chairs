@@ -3,3 +3,10 @@
     height: 2.2rem;
     align-self: flex-end;
 }
+
+@media (max-width: 48em) {
+    .header__logo-second {
+        width: 21.2rem;
+        height: 3rem;
+    }
+}

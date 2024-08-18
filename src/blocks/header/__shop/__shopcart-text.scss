@@ -1,6 +1,10 @@
 .shopcart__text {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 140%;
+    @include font_w_s_h(500, 1.6rem, 140%);
     margin-right: 0.65rem;
+}
+
+@media (max-width: 48em) {
+    .shopcart__text {
+      display: none;
+    }
 }

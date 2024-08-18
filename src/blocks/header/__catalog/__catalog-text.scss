@@ -1,6 +1,4 @@
 .header__catalog-text {
-    font-weight: 600;
-    font-size: 1.7rem;
-    line-height: 140%;
+    @include font_w_s_h (600, 1.7rem, 140%);
     color: #fff;
 }

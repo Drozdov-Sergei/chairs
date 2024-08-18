@@ -3,3 +3,10 @@
     height: 3rem;
     margin-right: 0.7rem;
 }
+
+@media (max-width: 48em) {
+    .header__logo-first {
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+}

@@ -1,9 +1,16 @@
 .shopcart__number {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 140%;
+    @include font_w_s_h(700, 1.2rem, 140%);
     color: #fff;
-    border-radius: 27px;
+    border-radius: 2.7rem;
     background: #0074d4;
-    padding: 1px 6px;
+    padding: 0.1rem 0.6rem;
+}
+
+@media (max-width: 48em) {
+    .shopcart__number {
+        font-size: 1.8rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

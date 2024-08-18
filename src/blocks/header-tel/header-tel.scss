@@ -1,5 +1,10 @@
 .header__tel {
-    display: flex;
-    align-items: center;
+    @include flex_center;
     margin-right: 3.8rem;
+}
+
+@media (max-width: 48em) {
+    .header__tel {
+      display: none;
+    }
 }

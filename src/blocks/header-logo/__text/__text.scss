@@ -1,9 +1,13 @@
 .header__logo-text {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 150%;
+    @include font_w_s_h(400, 1rem, 150%);
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: #959aae;
     padding-left: 3.7rem;
+}
+
+@media (max-width: 48em) {
+    .header__logo-text {
+        padding-left: 5.6rem;
+    }
 }

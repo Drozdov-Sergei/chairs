@@ -1,5 +1,10 @@
 .header__country {
-    display: flex;
-    align-items: center;
+    @include flex_center;
     margin-right: 2.5rem;
+}
+
+@media (max-width: 48em) {
+    .header__country {
+      display: none;
+    }
 }
