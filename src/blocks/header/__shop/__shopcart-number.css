@@ -1,0 +1,9 @@
+.shopcart__number {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140%;
+    color: #fff;
+    border-radius: 27px;
+    background: #0074d4;
+    padding: 1px 6px;
+}

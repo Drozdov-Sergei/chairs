@@ -1,0 +1,9 @@
+.header__button {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #2b3350;
+    padding: 1.35rem 2.85rem 1.55rem 2.85rem;
+    border-radius: 0.8rem;
+    background: #f3f4f7;
+}

@@ -1,0 +1,10 @@
+.header__navbar-link {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #2b3350;
+}
+
+.header__navbar-link:not(:last-child) {
+    margin-right: 3.4rem;
+}
