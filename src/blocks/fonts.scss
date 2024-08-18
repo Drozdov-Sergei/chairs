@@ -1,29 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  font-size: 62.5%;
-}
-
-.container {
-  width: 117rem;
-  margin: 0 auto;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-a {
-  text-decoration: none;
-}
-
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter/Inter-BoldItalic.eot');
@@ -347,17 +321,4 @@ a {
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  color: #2b3350;
-}
-
-input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
 }

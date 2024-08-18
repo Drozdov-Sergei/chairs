@@ -1,24 +1,27 @@
 {
-  "name": "chairs",
+  "name": "project",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shaurma_net",
+  "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^3.0.2",
     "del": "^5.1.0",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-newer": "^1.4.0"
+    "gulp-imagemin": "^2.4.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.8"
   },
   "dependencies": {
+    "decompress": "^4.2.1",
     "vivus": "^0.4.6"
   }
 }
