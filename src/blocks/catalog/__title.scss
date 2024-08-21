@@ -1,0 +1,5 @@
+.catalog__title {
+    @include font_w_s_h(900, 4.4rem, 120%);
+    text-align: center;
+    padding-bottom: 2.6rem;
+}

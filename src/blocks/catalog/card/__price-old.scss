@@ -1,0 +1,6 @@
+.catalog__price-old {
+    @include font_w_s_h(700, 2rem, 140%);
+    letter-spacing: -0.05em;
+    margin-bottom: 2rem;
+    position: relative;
+}
