@@ -1,0 +1,5 @@
+.advantages__card {
+    max-width: 36.3rem;
+    @include flex_center;
+    flex-direction: column;
+}
