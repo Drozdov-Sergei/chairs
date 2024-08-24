@@ -1,4 +1,7 @@
 .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(4, 28.1rem);
+    gap: 6.3rem 1.6rem;
     padding-bottom: 2rem;
     & .shit {
         padding-bottom: 30rem;

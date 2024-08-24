@@ -2,17 +2,22 @@
     @include flex_center;
     flex-direction: column;
     width: 28.1rem;
-    height: 54.5rem;
+    min-height: 54.5rem;
     text-align: center;
     &:hover{
         border: .1rem solid #f3f4f7;
         border-radius: 1.6rem;
         width: 33rem;
-        height: 70.1rem;
+        min-height: 70.1rem;
         box-shadow: 0 2rem 5.2rem -0.8rem rgba(0, 0, 0, 0.15);
-        background: #fff;
-        margin-left: -2.45rem;
-        margin-top: -0.2rem;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+            & .catalog__img {
+                margin-top: 5.9rem;
+            }
             & .catalog__button {
                 display: block;
             }

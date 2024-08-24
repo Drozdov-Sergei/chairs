@@ -1,0 +1,6 @@
+.header__location {
+    @include font_w_s_h(500, 1.6rem, 140%);
+    @include flex_center;
+    cursor: pointer;
+    position: relative;
+}

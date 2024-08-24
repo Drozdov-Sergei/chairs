@@ -6,6 +6,7 @@
     <title>Chairs</title>
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -54,12 +55,26 @@
                         <div class="header__country-img">
                             <img src="original-img/header/map.svg" alt="">
                         </div>
-                        <input list="country__list" id="country" class="country__list" placeholder="Москва">
+                        <div class="header__location">
+                            <span class="header__location-title">Москва</span>
+                            <ul class="header__location-list">
+                                <li class="header__location-item">Новосибирск</li>
+                                <li class="header__location-item">Пермь</li>
+                                <li class="header__location-item">Санкт-Петербург</li>
+                                <li class="header__location-item">Омск</li>
+                                <li class="header__location-item">Москва</li>
+                            </ul>
+                            <div class="header__location-img">
+                                <img src="img/header/arrow.svg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- <input list="country__list" id="country" class="country__list" placeholder="Москва">
                         <datalist id="country__list">
                             <option value="Москва">Москва</option>
                             <option value="СПб">СПб</option>
                             <option value="Новосибирск">Новосибирск</option>
-                        </datalist>
+                        </datalist> -->
                     </div>
                     <div class="shopcart">
                         <div class="shopcart__img">
@@ -107,18 +122,125 @@
             <div class="container">
                 <h2 class="title catalog__title">Каталог кресел</h2>
                 <div class="catalog__list">
-                    <div class="catalog__card">
-                        <div class="catalog__img">
-                            <img src="original-img/catalog/1chair.png" alt="">
-                        </div>
-                        <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
-                        <div class="catalog__price-new">23 000 ₽</div>
-                        <div class="catalog__price-old">27 000 ₽
-                            <div class="catalog__price-old-line">
-                                <img src="original-img/catalog/old__price.png" alt="">
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
                             </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
                         </div>
-                        <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/2chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/2chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <div class="catalog__card">
+                            <div class="catalog__img">
+                                <img src="original-img/catalog/1chair.png" alt="">
+                            </div>
+                            <div class="catalog__text">Samurai KL-1.04 Темно-коричневый</div>
+                            <div class="catalog__price-new">23 000 ₽</div>
+                            <div class="catalog__price-old">27 000 ₽
+                                <div class="catalog__price-old-line">
+                                    <img src="original-img/catalog/old__price.svg" alt="">
+                                </div>
+                            </div>
+                            <button type="submit" class="button catalog__button">Добавить в корзину</button>
+                        </div>
                     </div>
                     <div class="shit"></div>
                 </div>
