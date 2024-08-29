@@ -1,4 +1,3 @@
 .header__menu {
-    @include flex_center;
-    justify-content: space-between;
+  @include maxWindth;
 }

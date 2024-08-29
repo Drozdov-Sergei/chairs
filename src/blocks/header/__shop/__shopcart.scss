@@ -1,9 +1,0 @@
-.shopcart {
-    @include flex_center;
-}
-
-@media (max-width: 48em) {
-    .shopcart {
-        position: relative;
-    }
-}

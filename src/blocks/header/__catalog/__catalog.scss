@@ -1,16 +1,5 @@
 .header__catalog {
-    @include flex_center;
-    background: $first_color;
-    border-radius: 0 1.2rem 1.2rem 1.2rem;
-    width: 15.8rem;
-    height: 4.7rem;
-    cursor: pointer;
-    margin-right: 4.25rem;
-}
-
-
-@media (max-width: 48em) {
-    .header__catalog {
-      display: none;
-    }
+  @include vercen;
+  margin-right: 4.25rem;
+  @include font(600, 1.7rem, 140%);
 }

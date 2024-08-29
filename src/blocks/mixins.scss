@@ -1,15 +1,21 @@
-@mixin font_w_s_h ($width, $size, $heigh) {
-    font-weight: $width;
-    font-size: $size;
-    line-height: $heigh;
+@mixin font ($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
 }
 
-@mixin flex_center {
-    display: flex;
-    align-items: center;
+@mixin vercen {
+  display: flex;
+  align-items: center;
 }
 
-@mixin flex_sb {
-    display: flex;
-    justify-content: space-between;
+@mixin maxWindth {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

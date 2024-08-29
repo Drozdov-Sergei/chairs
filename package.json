@@ -1,12 +1,11 @@
 {
   "name": "project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Shaurma",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.7",
@@ -22,5 +21,6 @@
   },
   "dependencies": {
     "vivus": "^0.4.6"
-  }
+  },
+  "description": ""
 }
