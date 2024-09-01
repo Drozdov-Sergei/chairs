@@ -1,0 +1,10 @@
+.slider__header {
+    display: inline-block;
+    @include font(900, 5.4rem, 120%);
+    letter-spacing: -0.03rem;
+    margin-bottom: 2.1rem;
+    strong {
+        display: block;
+        font-weight: 900;
+    }
+}

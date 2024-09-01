@@ -1,0 +1,5 @@
+.header__location-list {
+    @include font(400, 1.7rem, 230%);
+    display: none;
+    transition: .3s;
+}

@@ -4,12 +4,11 @@
   max-width: 36.3rem;
 
   &:nth-child(2) {
-    & strong {
-      display: block;
-    }
-
     margin-left: 7.8rem;
     margin-right: 7.6rem;
+      & strong {
+        display: block;
+      }
   }
 
   & .delivery__img {

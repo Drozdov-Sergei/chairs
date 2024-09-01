@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/swiper-bundle.js"></script>
+  <script defer src="js/script.js"></script>
   <title>ОфисДирект</title>
 </head>
 
@@ -15,9 +18,12 @@
     <div class="container">
       <div class="header__wrap">
         <div class="header__info">
-          <div class="header__burger">
+          <button type="button" class="header__burger">
             <img src="img/header/burger-mobile.svg" alt="">
-          </div>
+          </button>
+          <button type="button" class="header__cross">
+            <img src="img/header/cross.svg" alt="">
+          </button>
           <a href="#" class="header-logo header__wrapper">
             <div class="header-logo__img">
               <img src="img/header/logo.png" alt="">
@@ -33,7 +39,7 @@
             </div>
             <a href="tel:+74952210675" class="header-tel__text header-tel__text--color">+7 495 221-06-75</a>
           </div>
-          <button type="button" class="button header__button button--color">Заказать звонок</button>
+          <button type="button" class="button header__button button--color button__modal">Заказать звонок</button>
         </div>
         <div class="header__menu">
           <div class="header__navigation">
@@ -51,14 +57,27 @@
           <div class="header__shop">
             <div class="header__region">
               <div class="header__gps">
-                <img src="img/header/gps.svg" alt="">
+                <img src="img/header/map.svg" alt="">
               </div>
-              <input class="header__country" type="text" list="country">
+              <div class="header__location">
+                <span class="header__location-title">Москва</span>
+                <ul class="header__location-list">
+                    <li class="header__location-item">Новосибирск</li>
+                    <li class="header__location-item">Пермь</li>
+                    <li class="header__location-item">Санкт-Петербург</li>
+                    <li class="header__location-item">Омск</li>
+                    <li class="header__location-item">Москва</li>
+                </ul>
+                <div class="header__location-img">
+                    <img src="img/header/gps.svg" alt="">
+                </div>
+            </div>
+              <!-- <input class="header__country" type="text" list="country">
               <datalist id="country">
                 <option value="Москва"></option>
                 <option value="Новосибирск"></option>
                 <option value="Псков"></option>
-              </datalist>
+              </datalist> -->
             </div>
             <div class="header-basket header__basket">
               <div class="header-basket__img">
@@ -70,10 +89,119 @@
           </div>
         </div>
       </div>
+      <div class="header__mobile">
+        <ul class="header__list">
+          <li><a href="#" class="header__item">О продукте</a></li>
+          <li><a href="#" class="header__item">Отзывы</a></li>
+          <li><a href="#" class="header__item">Доставка и оплата</a></li>
+          <li><a href="#" class="header__item">Контакты</a></li>
+        </ul>
+        <button type="button" class="button header__button-mobile button--color button__modal">Заказать звонок</button>
+        <a href="tel:+74952210675" class="header-tel__text header-tel__text--color">+7 495 221-06-75</a>
+      </div>
     </div>
   </header>
 
   <main class="main">
+
+    <section class="slider swiper">
+      <div class="swiper-wrapper">
+        <div class="slider__slide swiper-slide">
+          <div class="container">
+            <div class="slider__wrap">
+              <div class="slider__title">
+                <h1 class="slider__header">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+                <div class="slider__flag">
+                  <img src="img/slider/flag.png" alt="">
+                </div>
+              </div>
+              <div class="slider__description">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+            </div>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
+          </div>
+          <div class="slider__back">
+            <img src="img/slider/slide-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="container">
+            <div class="slider__wrap">
+              <div class="slider__title">
+                <h1 class="slider__header">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+                <div class="slider__flag">
+                  <img src="img/slider/flag.png" alt="">
+                </div>
+              </div>
+              <div class="slider__description">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+            </div>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
+          </div>
+          <div class="slider__back">
+            <img src="img/slider/slide-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="container">
+            <div class="slider__wrap">
+              <div class="slider__title">
+                <h1 class="slider__header">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+                <div class="slider__flag">
+                  <img src="img/slider/flag.png" alt="">
+                </div>
+              </div>
+              <div class="slider__description">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+            </div>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
+          </div>
+          <div class="slider__back">
+            <img src="img/slider/slide-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="container">
+            <div class="slider__wrap">
+              <div class="slider__title">
+                <h1 class="slider__header">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+                <div class="slider__flag">
+                  <img src="img/slider/flag.png" alt="">
+                </div>
+              </div>
+              <div class="slider__description">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+            </div>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
+          </div>
+          <div class="slider__back">
+            <img src="img/slider/slide-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider__slide swiper-slide">
+          <div class="container">
+            <div class="slider__wrap">
+              <div class="slider__title">
+                <h1 class="slider__header">Кресла Samurai <strong>на выгодных условиях</strong> по всей стране </h1>
+                <div class="slider__flag">
+                  <img src="img/slider/flag.png" alt="">
+                </div>
+              </div>
+              <div class="slider__description">Здесь вам не придется покупать товар в слепую — проведите тест-драйв перед покупкой</div>
+            </div>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
+          </div>
+          <div class="slider__back">
+            <img src="img/slider/slide-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+        <div class="slider__navigation">
+          <div class="slider__arrow slider__arrow-left slider__arrow--style">
+            <img src="img/slider/arrow-left.svg" alt="">
+          </div>
+          <div class="slider__arrow slider__arrow-right slider__arrow--style">
+            <img src="img/slider/arrow-right.svg" alt="">
+          </div>
+          <div class="slider__pagination"></div>
+      </div>
+    </section>
 
     <section class="delivery">
       <div class="container">
@@ -241,17 +369,41 @@
             <div class="drive__title">Посетите салон и проведите тест-драйв лично</div>
             <div class="drive__description">У нас есть шоурумы в Москве и Санкт-Петербурге, где мы всегда рады видеть
               вас. Дат профессиональную консультацию и поделиться экспертизой</div>
-            <button type="button" class="button drive__button button--style">Запись на тест-драйв</button>
+            <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
           </div>
+          <div class="drive__main-img"><img src="img/drive/drive-img.png" alt="" class=""></div>
         </div>
         <img class="drive__img" src="img/drive/drive-back-mobile.jpg" alt="">
       </div>
     </section>
   </main>
+  <!-- <div class="map">
+    <div class="map__element">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1zAxdo5u_i7uBABJvyL3zu2Fciz6aSlI&ehbc=2E312F&noprof=1" width="100%" height="100%"></iframe>
+    </div>
+  </div> -->
+  <!-- <div class="map">
+    <div id="map-element" class="map__element">
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=6e1e6384-f2b0-47f0-9369-107af56140f4&lang=ru_RU"></script>
+    </div>
+  </div> -->
 
   <footer class="footer">
 
   </footer>
+
+  <div class="modal modal--style">
+    <div class="modal__inner modal__inner--style">
+      <div class="modal__done">
+        <img src="img/modal/done.svg" alt="">
+      </div>
+      <div class="modal__text">
+        <div class="modal__header">Ваша заявка принята</div>
+        <div class="modal__description modal__description--color">В ближайшее время наш менеджер 
+          свяжется  с Вами</div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

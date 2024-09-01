@@ -1,3 +1,6 @@
 .header__nav {
   @include vercen;
+  .header__link {
+    color: $color-text-black;
+  }
 }

@@ -1,7 +1,11 @@
 .drive__wrapper {
   width: 180rem;
   margin: 0 auto;
-  padding-top: 10rem;
+    .container {
+      // display: flex;
+      // justify-content: space-between;
+      position: relative;
+    }
 }
 
 @media (max-width: 48em) {

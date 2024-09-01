@@ -61,7 +61,9 @@ function styles() {
 }
 
 function images() {
-  return src(paths.images.src)
+  return src(paths.images.src, {
+    encoding: false
+})
     .pipe(newer(paths.images.dest))
     .pipe(imagemin())
     .pipe(dest(paths.images.dest))

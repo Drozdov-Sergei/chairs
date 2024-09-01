@@ -1,0 +1,11 @@
+.slider__pagination {
+    // width: 10rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+        .swiper-pagination-bullet-active {
+            background-color: #2B3350;
+        }
+}
