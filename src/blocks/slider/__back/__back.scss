@@ -7,3 +7,11 @@
         width: 100%;
     }
 }
+
+@media (max-width: 48em) {
+    .slider{
+        &__back {
+            display: none;
+        }
+    }
+}

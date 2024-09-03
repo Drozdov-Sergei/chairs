@@ -8,3 +8,10 @@
         font-weight: 900;
     }
 }
+
+@media (max-width: 48em) {
+    .slider__header {
+      @include font (500, 3.4rem, 120%);
+      letter-spacing: 0;
+    }
+  }

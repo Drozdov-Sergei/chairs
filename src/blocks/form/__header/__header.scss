@@ -1,0 +1,5 @@
+.form__header {
+    @include font(900, 4.4rem, 120%);
+    margin-bottom: .9rem;
+    max-width: 58.4rem;
+}

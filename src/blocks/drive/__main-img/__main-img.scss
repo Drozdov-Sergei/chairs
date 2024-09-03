@@ -5,3 +5,9 @@
     bottom: 3.1rem;
     right: -6rem;
 }
+
+@media (max-width: 48em) {
+    .drive__main-img{
+    display: none;
+}
+}

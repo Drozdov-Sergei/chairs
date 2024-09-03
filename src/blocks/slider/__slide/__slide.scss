@@ -3,3 +3,11 @@
     padding-top: 11.6rem;
     padding-bottom: 13.1rem;
 }
+
+@media (max-width: 48em) {
+    .slider__slide{
+    padding-top: 4.6rem;
+    padding-bottom: 12rem;
+    height: 46.4rem;
+}
+}

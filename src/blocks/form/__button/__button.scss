@@ -1,0 +1,6 @@
+.form__button {
+    @include font(600, 1.8rem, 140%);
+    padding: 2.6rem 7.2rem 3rem;
+    position: relative;
+    z-index: 100;
+}

@@ -8,6 +8,6 @@
 @media (max-width: 48em) {
   .catalog__wrap {
     grid-template-columns: repeat(2, 49%);
-
+    grid-template-rows: repeat(3, 1fr);
   }
 }
