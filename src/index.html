@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/aos.js"></script>
   <script defer src="js/swiper-bundle.js"></script>
   <script defer src="js/script.js"></script>
   <title>ОфисДирект</title>
@@ -221,7 +223,7 @@
     <section class="delivery">
       <div class="container">
         <div class="delivery__wrap">
-          <div class="delivery__item">
+          <div class="delivery__item" data-aos="fade-right">
             <div class="delivery__img">
               <img src="img/delivery/delivery-img-1.svg" alt="">
             </div>
@@ -232,7 +234,7 @@
               <a href="#" class="delivery__link delivery__link--color">Как получить?</a>
             </div>
           </div>
-          <div class="delivery__item">
+          <div class="delivery__item" data-aos="fade-up">>
             <div class="delivery__img">
               <img src="img/delivery/delivery-img-2.svg" alt="">
             </div>
@@ -241,7 +243,7 @@
               <a href="#" class="delivery__link delivery__link--color">Смотреть условия</a>
             </div>
           </div>
-          <div class="delivery__item">
+          <div class="delivery__item" data-aos="fade-left">
             <div class="delivery__img">
               <img src="img/delivery/delivery-img-3.svg" alt="">
             </div>
@@ -386,30 +388,30 @@
               вас. Дат профессиональную консультацию и поделиться экспертизой</div>
             <button type="button" class="button drive__button button--style button__modal">Запись на тест-драйв</button>
           </div>
-          <div class="drive__main-img"><img src="img/drive/drive-img.png" alt="" class=""></div>
+          <div class="drive__main-img" data-aos="fade-left" data-aos-duration="1000"><img src="img/drive/drive-img.png" alt="" class=""></div>
         </div>
         <img class="drive__img" src="img/drive/drive-back-mobile.jpg" alt="">
       </div>
     </section>
 
-    <section class="form">
+    <section class="form form--position">
       <div class="form__wrapper form__wrapper--style">
         <div class="container">
           <h3 class="form__header">У вас остались вопросы?</h3>
           <div class="form__description">Оставьте контакты. Наш менеджер свяжется с вами и бесплатно проконсультирует</div>
-          <form action="#" class="form__elements">
+          <form action="#" method="POST" class="form__elements">
             <div class="form__item">
-              <label for="name" class="form__label">
-                <input type="text" id="name" class="form__input form__input--style" placeholder="Ваше Имя">
+              <label for="name" class="form__label" data-aos="flip-left">
+                <input type="text" id="name" name="user-name" class="form__input form__input--style" placeholder="Ваше Имя">
               </label>
-              <label for="telephone" class="form__label">
-                <input type="tel" id="telephone" class="form__input form__input--style" placeholder="Телефон для связи">
+              <label for="telephone" class="form__label" data-aos="flip-right">
+                <input type="tel" id="telephone" name="user-phone" class="form__input form__input--style" placeholder="Телефон для связи">
               </label>
-              <button type="submit" class="button form__button form__button--style">Заказать звонок</button>
+              <button type="submit" class="button form__button form__button--style" data-aos="flip-up">Заказать звонок</button>
             </div>
             <div class="form__item">
-              <input type="checkbox" class="form__checkbox">
-              <div class="form__text">Даю свое согласие на обработку личных данных</div>
+              <input type="checkbox" class="form__checkbox" id="check">
+              <label class="form__text form__text--color" for="check"><span>Даю свое согласие на обработку личных данных</span></label>
             </div>
           </form>
         </div>
@@ -433,7 +435,51 @@
   </div> -->
 
   <footer class="footer">
-
+     <div class="footer__wrap">
+      <div class="container">
+        <div class="footer__info">
+          <a href="#" class="footer__logo">
+            <img src="img/footer/logo-footer.png" alt="">
+          </a>
+          <a href="#" class="footer__politics">
+            Политика конфиденциальности
+          </a>
+          <div class="footer__rights">
+            © 2021 Все права защищены
+          </div>
+        </div>
+        <div class="footer__nav">
+          <ul>
+            <li class="footer__nav-item"><a href="#">О продукте</a></li>
+            <li class="footer__nav-item"><a href="#">Отзывы</a></li>
+            <li class="footer__nav-item"><a href="#">Доставка и оплата</a></li>
+            <li class="footer__nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">
+            <div class="footer__contacts-img">
+              <img src="img/footer/phone.svg" alt="">
+            </div>
+              <a href="tel:+74952210675" class="footer__phone-text">+7 495 221-06-75</a>
+          </div>
+          <div class="footer__contacts-item">
+            <div class="footer__contacts-img">
+              <img src="img/footer/mail.svg" alt="">
+            </div>
+              <a href="mailto:zakaz@kresla-samurai.ru" class="footer__mail-text">zakaz@kresla-samurai.ru</a>
+          </div>
+          <div class="footer__contacts-item">
+            <div class="footer__contacts-img">
+              <img src="img/footer/adress.svg" alt="">
+            </div>
+            <div class="footer__adress-text">
+              ул. Красного курсанта д.25, лит.в, оф. 114, бизнес-центр "RED CADET"
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
   </footer>
 
   <div class="modal modal--style">
@@ -448,6 +494,10 @@
       </div>
     </div>
   </div>
+
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

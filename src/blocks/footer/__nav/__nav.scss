@@ -1,0 +1,5 @@
+.footer__nav {
+    @include font(500, 1.7rem, 140%);
+    font-family: $second-family;
+    margin-right: 7.2rem;
+}

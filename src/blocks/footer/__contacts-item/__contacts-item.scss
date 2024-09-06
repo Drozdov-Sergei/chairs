@@ -1,0 +1,6 @@
+.footer__contacts-item {
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 1.7rem;
+    }
+}
