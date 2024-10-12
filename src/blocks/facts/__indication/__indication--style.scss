@@ -1,0 +1,9 @@
+.facts__indication--style {
+    border-radius: 2.2rem;
+    background: #37a5ff;
+    @include centered();
+    img {
+        width: 65%;
+        height: 65%;
+    }
+}

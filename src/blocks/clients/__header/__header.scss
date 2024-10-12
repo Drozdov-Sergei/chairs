@@ -1,0 +1,10 @@
+.clients__header {
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+
+@media (max-width: 48em) {
+    .clients__header {
+        margin-bottom: 5.2rem;
+    }
+}

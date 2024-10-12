@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/aos.js"></script>
+  <script defer src="js/just-validate.production.min.js"></script>
+  <script defer src="js/inputmask.min.js"></script>
   <script defer src="js/swiper-bundle.js"></script>
   <script defer src="js/script.js"></script>
   <title>ОфисДирект</title>
@@ -122,7 +124,12 @@
             <button type="button" class="button drive__button button--style button__modal"><span class="slider__button-mobile">Запись на </span>тест-драйв</button>
           </div>
           <div class="slider__back">
-            <img src="img/slider/slide-1.jpg" alt="">
+            <picture loading="lazy">
+              <source srcset="img/slider/slide-1.avif" type="image/avif">
+              <source srcset="img/slider/slide-1.webp" type="image/webp">
+              <source srcset="img/slider/slide-1.jpg" type="image/jpg">
+              <img src="img/slider/slide-1.jpg" alt="">
+          </picture>
           </div>
           <div class="slider__back-mobile">
             <img src="img/slider/slide-mobile.jpg" alt="">
@@ -344,7 +351,7 @@
               <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart catalog__cart cart--color">
+          <a href="#" class="cart catalog__cart cart--color cart__not-mobile">
             <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
                 <img src="img/cart/cart-2.png" alt="">
@@ -358,7 +365,7 @@
               <div class="button cart__button button--style">Добавить в корзину</div>
             </div>
           </a>
-          <a href="#" class="cart catalog__cart cart--color">
+          <a href="#" class="cart catalog__cart cart--color cart__not-mobile">
             <div class="cart__wrap cart__wrap--color">
               <div class="cart__img">
                 <img src="img/cart/cart-2.png" alt="">
@@ -379,6 +386,96 @@
       </div>
     </section>
 
+    <section class="advantages">
+      <div class="advantages__wrap">
+        <div class="container">
+          <h2 class="advantages__title">Особенности кресел Самурай</h2>
+          <div class="advantages__text">
+            Здесь будет более подробно развернуто ключевое преимущество. Четвертое поколение Samurai, выпускаемое с сентября 2020 года. <strong>Исправлены десятки недочетов</strong> предыдущих поколений
+          </div>
+          <div class="advantages__wrapper">
+            <div class="advantages__img">
+              <img src="img/advantages/chair.png" alt="">
+            </div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__wrapper-circle"><img class="advantages__wrapper-circle--active" src="img/advantages/green-circle.svg" alt=""><img class="advantages__wrapper-circle--notactive" src="img/advantages/white-circle.svg" alt=""></div>
+            <div class="advantages__items">
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+              <div class="advanteges__item">
+                <div class="advantages__item-title">
+                  Индивидуальные настройки
+                </div>
+                <div class="advantages__item-text">
+                  Учитывая ключевые сценарии поведения, высокое качество позиционных исследований способствует повышению
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="drive">
       <div class="drive__wrapper drive__wrapper--style">
         <div class="container">
@@ -391,6 +488,135 @@
           <div class="drive__main-img" data-aos="fade-left" data-aos-duration="1000"><img src="img/drive/drive-img.png" alt="" class=""></div>
         </div>
         <img class="drive__img" src="img/drive/drive-back-mobile.jpg" alt="">
+      </div>
+    </section>
+
+    <section class="facts">
+      <div class="container">
+        <h3 class="facts__title">
+          10 удивительных фактов про  МЕТТА
+        </h3>
+        <div class="facts__description">
+          Кресла Samurai - продукция компании МЕТТА, ведущего производителя офисных кресел и стульев в России и странах СНГ. Компания МЕТТА еще более удивительна, чем ее кресла:
+        </div>
+        <div class="facts__accordeon">
+          <div class="facts__item">
+            <div class="facts__wrapper">
+              <div class="facts__question">
+                <div class="facts__number facts__number--style">
+                  01
+                </div>
+                <div class="facts__text facts__text--style">
+                  МЕТТА  заставляет расстаться с привычкой,
+                </div>
+              </div>
+              <div class="facts__indication facts__indication--style">
+                <img class="facts__plus" src="img/facts/Plus.svg" alt="">
+                <img class="facts__minus" src="img/facts/minus.svg" alt="">
+              </div>
+            </div>
+            <div class="facts__answer facts__answer--style">
+              Столько различных модификаций кресел можно скомпоновать,  если перебирать все возможные сочетания комплектующих. Но в каталог МЕТТА входят около тысячи наиболее востребованных моделей. 
+            </div>
+          </div>
+
+          <div class="facts__item">
+            <div class="facts__wrapper">
+              <div class="facts__question">
+                <div class="facts__number facts__number--style">
+                  02
+                </div>
+                <div class="facts__text facts__text--style">
+                  Миллион вариантов
+                </div>
+              </div>
+              <div class="facts__indication facts__indication--style">
+                <img class="facts__plus" src="img/facts/Plus.svg" alt="">
+                <img class="facts__minus facts__minus--mobile" src="img/facts/minus.svg" alt="">
+              </div>
+            </div>
+            <div class="facts__answer facts__answer--style">
+              Столько различных модификаций кресел можно скомпоновать,  если перебирать все возможные сочетания комплектующих. Но в каталог МЕТТА входят около тысячи наиболее востребованных моделей. 
+            </div>
+          </div>
+
+          <div class="facts__item">
+            <div class="facts__wrapper">
+              <div class="facts__question">
+                <div class="facts__number facts__number--style">
+                  03
+                </div>
+                <div class="facts__text facts__text--style">
+                  Полный производственный цикл
+                </div>
+              </div>
+              <div class="facts__indication facts__indication--style">
+                <img class="facts__plus" src="img/facts/Plus.svg" alt="">
+                <img class="facts__minus facts__minus--mobile" src="img/facts/minus.svg" alt="">
+              </div>
+            </div>
+            <div class="facts__answer facts__answer--style">
+              Столько различных модификаций кресел можно скомпоновать,  если перебирать все возможные сочетания комплектующих. Но в каталог МЕТТА входят около тысячи наиболее востребованных моделей. 
+            </div>
+          </div>
+
+          <div class="facts__item">
+            <div class="facts__wrapper">
+              <div class="facts__question">
+                <div class="facts__number facts__number--style">
+                  04
+                </div>
+                <div class="facts__text facts__text--style">
+                  Японские инженеры
+                </div>
+              </div>
+              <div class="facts__indication facts__indication--style">
+                <img class="facts__plus" src="img/facts/Plus.svg" alt="">
+                <img class="facts__minus facts__minus--mobile" src="img/facts/minus.svg" alt="">
+              </div>
+            </div>
+            <div class="facts__answer facts__answer--style">
+              Столько различных модификаций кресел можно скомпоновать,  если перебирать все возможные сочетания комплектующих. Но в каталог МЕТТА входят около тысячи наиболее востребованных моделей. 
+            </div>
+          </div>
+
+          <div class="facts__item">
+            <div class="facts__wrapper">
+              <div class="facts__question">
+                <div class="facts__number facts__number--style">
+                  05
+                </div>
+                <div class="facts__text facts__text--style">
+                  Швейцарская Swiss Approval International
+                </div>
+              </div>
+              <div class="facts__indication facts__indication--style">
+                <img class="facts__plus" src="img/facts/Plus.svg" alt="">
+                <img class="facts__minus facts__minus--mobile" src="img/facts/minus.svg" alt="">
+              </div>
+            </div>
+            <div class="facts__answer facts__answer--style">
+              Столько различных модификаций кресел можно скомпоновать,  если перебирать все возможные сочетания комплектующих. Но в каталог МЕТТА входят около тысячи наиболее востребованных моделей. 
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <h3 class="clients__header clients__header--style">Наши клиенты</h3>
+        <div class="clients__logo">
+          <div class="client__item"><img src="img/clients/1.png" alt=""></div>
+          <div class="client__item"><img src="img/clients/2.png" alt=""></div>
+          <div class="client__item"><img src="img/clients/3.png" alt=""></div>
+          <div class="client__item"><img src="img/clients/4.png" alt=""></div>
+          <div class="client__item"><img src="img/clients/5.png" alt=""></div>
+          <div class="client__item"><img src="img/clients/6.png" alt=""></div>
+        </div>
       </div>
     </section>
 
@@ -411,7 +637,7 @@
             </div>
             <div class="form__item">
               <input type="checkbox" class="form__checkbox" id="check">
-              <label class="form__text form__text--color" for="check"><span>Даю свое согласие на обработку личных данных</span></label>
+              <label class="form__text form__text--color" for="check" id="jff"><span>Даю свое согласие на обработку личных данных</span></label>
             </div>
           </form>
         </div>
@@ -423,6 +649,19 @@
 
     </section>
   </main>
+
+  <div class="map">
+    <div class="map__mobile">
+      <img src="img/map/map-mobile.png" alt="">
+    </div>
+    <div class="map__main-img">
+      <img src="img/map/map.png" alt="">
+    </div>
+    <div class="map__pin">
+      <img src="img/map/pin.svg" alt="">
+    </div>
+  </div>
+
   <!-- <div class="map">
     <div class="map__element">
       <iframe src="https://www.google.com/maps/d/embed?mid=1zAxdo5u_i7uBABJvyL3zu2Fciz6aSlI&ehbc=2E312F&noprof=1" width="100%" height="100%"></iframe>
@@ -461,7 +700,8 @@
             <div class="footer__contacts-img">
               <img src="img/footer/phone.svg" alt="">
             </div>
-              <a href="tel:+74952210675" class="footer__phone-text">+7 495 221-06-75</a>
+              <a href="tel:+74952210675" class="footer__phone-text footer__contacts-desk">+7 495 221-06-75</a>
+              <a href="tel:+78126003124" class="footer__phone-text footer__contacts-mob">+7 (812) 600-31-24</a>
           </div>
           <div class="footer__contacts-item">
             <div class="footer__contacts-img">

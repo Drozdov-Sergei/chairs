@@ -13,3 +13,21 @@
         color: inherit;
     }
 }
+
+@media (max-width: 48em) {
+    .footer__wrap {
+        padding-top: 8.2rem;
+        padding-bottom: 7.6rem;
+        font-size: 3rem;
+        padding-right: 10.2rem;
+        padding-left: 3.2rem;
+        .container {
+            max-width: 100%;
+            flex-direction: column;
+            position: relative;
+            padding-top: 11.4rem;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

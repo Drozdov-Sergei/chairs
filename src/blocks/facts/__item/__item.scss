@@ -1,0 +1,10 @@
+.facts__item {
+    cursor: pointer;
+    border: .1rem  solid #f3f4f7;
+    border-radius: 1.6rem;
+    padding: 2.6rem 3.1rem 2.1rem 2rem;
+    
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+}

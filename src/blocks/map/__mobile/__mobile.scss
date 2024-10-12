@@ -1,0 +1,11 @@
+.map__mobile {
+    display: none;
+}
+
+@media (max-width: 48em) {
+    .map__mobile {
+        display: block;
+        width: 100%;
+        height: 58.8rem;
+    }
+}

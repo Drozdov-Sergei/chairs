@@ -3,3 +3,11 @@
     font-family: $second-family;
     margin-right: 7.2rem;
 }
+
+@media (max-width: 48em) {
+    .footer__nav {
+        @include font(500, 3rem, 140%);
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+  }

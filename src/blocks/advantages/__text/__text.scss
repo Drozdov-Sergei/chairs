@@ -1,0 +1,9 @@
+.advantages__text{
+    @include font(400, 2.3rem, 160%);
+    padding-bottom: 9rem;
+    text-align: center;
+    color: #576077;
+    & strong {
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,9 @@
+.facts__indication--active {
+    background: #0074d4;
+    .facts__plus {
+        display: none;
+    }
+    .facts__minus {
+        display: flex;
+    }
+}

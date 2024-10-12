@@ -1,0 +1,36 @@
+.advantages__wrapper {
+    position: relative;
+
+    & :nth-child(2) {
+        top: -2rem;
+        left: 40%;
+    }
+    & :nth-child(3) {
+        top: 14rem;
+        left: 35.5%;
+    }
+    & :nth-child(4) {
+        top: 16.8rem;
+        left: 41%;
+    }
+    & :nth-child(5) {
+        top: 24.2rem;
+        left: 57%;
+    }
+    & :nth-child(6) {
+        top: 27rem;
+        left: 44%;
+    }
+    & :nth-child(7) {
+        top: 40.6rem;
+        left: 51%;
+    }
+    & :nth-child(8) {
+        top: 44.4rem;
+        left: 46%;
+    }
+    & :nth-child(9) {
+        top: 53.1rem;
+        left: 32.5%;
+    }
+}

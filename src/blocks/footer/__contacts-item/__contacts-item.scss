@@ -4,3 +4,11 @@
         margin-bottom: 1.7rem;
     }
 }
+
+@media (max-width: 48em) {
+    .footer__contacts-item{
+        &:not(:last-child) {
+            margin-bottom: 2.6rem;
+        }
+    }
+}

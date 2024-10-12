@@ -1,4 +1,19 @@
 .form__item {
     margin-bottom: 2.3rem;
     display: flex;
+    &:last-child {
+        position: relative;
+        .just-validate-error-label {
+            position: absolute;
+            top: 2.5rem;
+            left: 3.8rem;
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .form__item {
+        flex-direction: column;
+        margin-bottom: 2.8rem;
+    }
 }

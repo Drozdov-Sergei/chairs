@@ -2,8 +2,6 @@
   width: 180rem;
   margin: 0 auto;
     .container {
-      // display: flex;
-      // justify-content: space-between;
       position: relative;
     }
 }
@@ -12,5 +10,10 @@
   .drive__wrapper {
     width: 100%;
     padding-top: 10rem;
+    position: relative;
+
+    .container {
+      position: unset;
+    }
   }
 }

@@ -2,3 +2,11 @@
   padding-top: 9.5rem;
   padding-bottom: 11.4rem;
 }
+
+@media (max-width: 48em) {
+  .drive__text {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}

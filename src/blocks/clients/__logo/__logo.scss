@@ -1,0 +1,12 @@
+.clients__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 48em) {
+    .clients__logo {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

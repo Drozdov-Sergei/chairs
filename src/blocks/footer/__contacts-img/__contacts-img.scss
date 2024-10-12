@@ -3,3 +3,9 @@
     height: 2.4rem;
     margin-right: .9rem;
 }
+
+@media (max-width: 48em) {
+    .footer__contacts-img {
+        display: none;
+    }
+  }

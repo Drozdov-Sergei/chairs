@@ -1,3 +1,9 @@
 .footer__politics {
     margin-bottom: .6rem;
 }
+
+@media (max-width: 48em) {
+    .footer__politics {
+        margin-bottom: 1.2rem;
+    }
+}

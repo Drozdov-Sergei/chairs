@@ -22,6 +22,13 @@ locationItem.forEach ((Item, i) => {
 });
 
 //карты
+// let flag = 0;
+
+// window.addEventListener('scroll', function () {
+//     let scrollY = window.scrollY;
+//     let mapOffset = this.document.querySelector('.map').offsetTop;
+
+//     if ((scrollY >= mapOffset - 500) && (flag == 0)) {
 // let center = [59.949873623587585, 30.316037580080657];
 
 // function init() {
@@ -41,7 +48,12 @@ locationItem.forEach ((Item, i) => {
 
 // }
 
+
 // ymaps.ready(init);
+
+//flag = 1;
+//    }
+//});
 
 
 
@@ -109,10 +121,59 @@ const swiper = new Swiper('.slider', {
     }
   });
 
-  //iform send
-// const form = document.querySelector('.form_elements');
+// mask for form
+const form = document.querySelector('.form__elements');
+const telSelector = form.querySelector('input[type="tel"]');
+const inputMask = new Inputmask ('+7 (999) 999-99-99');
+inputMask.mask(telSelector);
 
-// const sendForm = (data) => {
+//validation
+const validation = new JustValidate('.form__elements');
+
+validation
+  .addField('#name', [
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: 'Количество символов меньше 2!',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Количество символов больше 30!',    
+    },
+    {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Введите имя!',
+    }
+  ])
+
+  .addField('#telephone', [
+    {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Введите телефон!',
+    },
+    {
+        rule: 'function',
+        validator: function() {
+            const phone = telSelector.inputmask.unmaskedvalue();
+            return phone.length === 10;
+        },
+        errorMessage: 'Введите корректный номер телефона!',
+    }
+  ])
+
+  .addField('#check', [
+    {
+    rule: 'required',
+    errorMessage: 'Поставь галочку блядь!',
+    }
+])
+  ;//.onSuccess((e) => {
+    //if (document.querySelector('#check').checked) {
+    // const sendForm = (data) => {
 //     return fetch('mail.php', {
 //         method: 'POST',
 //         body: JSON.stringify(data),
@@ -121,11 +182,7 @@ const swiper = new Swiper('.slider', {
 //         }
 //     }).then(res => res.json());
 // };
-
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     const dataForm = new FormData(form);
+//     const dataForm = new FormData(e.target);
 //     const user = {};
 
 //     dataForm.forEach((val, key) => {
@@ -136,6 +193,60 @@ const swiper = new Swiper('.slider', {
 //         console.log("Письмо отправилось!");
 //     });
 
-//     form.reset();
+//     e.target.reset();
+//}});
 
-// });
+
+//advantages
+
+let advantages = document.querySelectorAll('.advanteges__item'),
+    circle = document.querySelectorAll('.advantages__wrapper-circle')
+
+advantages.forEach((key, i) => {
+    key.addEventListener('mouseout', (event) => {
+        let currentimg = circle[i].querySelectorAll('img')
+            advantages[i].classList.remove('advantages__item--active')
+            currentimg[1].classList.remove('advantages__wrapper-circle--active')
+            currentimg[1].classList.add('advantages__wrapper-circle--notactive')
+            currentimg[0].classList.add('advantages__wrapper-circle--active')
+            currentimg[0].classList.remove('advantages__wrapper-circle--notactive')
+        });
+    key.addEventListener('mouseover', (event) => {
+        let currentimg = circle[i].querySelectorAll('img')
+            advantages[i].classList.add('advantages__item--active')
+            currentimg[1].classList.add('advantages__wrapper-circle--active')
+            currentimg[1].classList.remove('advantages__wrapper-circle--notactive')
+            currentimg[0].classList.remove('advantages__wrapper-circle--active')
+            currentimg[0].classList.add('advantages__wrapper-circle--notactive')
+    });
+});
+
+
+//accordeon
+
+let accordeon = document.querySelector('.facts__accordeon'),
+        item = document.querySelectorAll('.facts__item'),
+        indicator = document.querySelectorAll('.facts__indication'),
+        answer = document.querySelectorAll('.facts__answer');
+
+accordeon.addEventListener ('click', (e) => {
+    const target = e.target.closest('.facts__item');
+    if (target) {
+    item.forEach((key, i) => {
+        if (key === target) {
+            if(key.classList.contains('facts__item--active')){
+                item[i].classList.remove('facts__item--active');
+                indicator[i].classList.remove('facts__indication--active');
+                answer[i].classList.remove('facts__answer--active');
+            } else {
+                item[i].classList.add('facts__item--active');
+                indicator[i].classList.add('facts__indication--active');
+                answer[i].classList.add('facts__answer--active');}
+        } else {
+            item[i].classList.remove('facts__item--active');
+            indicator[i].classList.remove('facts__indication--active');
+            answer[i].classList.remove('facts__answer--active');
+        }
+    });
+    }
+});

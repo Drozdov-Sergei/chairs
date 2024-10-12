@@ -1,5 +1,13 @@
 .form--position {
     position: relative;
     margin-bottom: -20rem;
+    margin-top: 17.5rem;
     z-index: 1000;
+}
+
+@media (max-width: 48em) {
+    .form--position {
+        margin-bottom: 0;
+        margin-top: 13.4rem;
+    }
 }

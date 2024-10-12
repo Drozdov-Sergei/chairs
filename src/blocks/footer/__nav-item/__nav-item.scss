@@ -3,3 +3,11 @@
         margin-bottom: 1rem;
     }
 }
+
+@media (max-width: 48em) {
+    .footer__nav-item {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+  }
+}

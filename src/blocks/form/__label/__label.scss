@@ -27,3 +27,27 @@
             }
 }
 }
+
+@media (max-width: 48em) {
+    .form__label {
+        width: 49.8rem;
+        height: 12.6rem;
+        margin-bottom: 2.4rem;
+
+        &:nth-child(1) {
+            .form__input--style {
+                background-size: 4rem;
+                padding-right: 4rem;
+            }  
+        }
+
+        &:nth-child(2) {
+            margin-left: 0;
+            margin-right: 0;
+            .form__input--style {
+                background-size: 4rem;
+                padding-right: 4rem;
+            }
+        }
+    }
+}

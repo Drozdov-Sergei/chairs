@@ -4,3 +4,12 @@
     height: 4.2rem;
     margin-bottom: 1.6rem;
 }
+
+@media (max-width: 48em) {
+    .footer__logo {
+        width: 36.8rem;
+        height: 8.4rem;
+        position: absolute;
+        top: 0;
+    }
+  }

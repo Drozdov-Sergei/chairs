@@ -1,3 +1,19 @@
 .footer__contacts {
     @include font(400, 1.7rem, 140%);
+    .footer__contacts-mob {
+        display: none;
+    }
 }
+
+@media (max-width: 48em) {
+    .footer__contacts {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+        .footer__contacts-mob {
+            display: block;
+        }
+        .footer__contacts-desk {
+            display: none;
+        }
+    }
+  }
